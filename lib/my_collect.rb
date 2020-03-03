@@ -11,6 +11,7 @@ def my_collect(arr)
   return_arr = []
   while i < arr.size do
     return_arr << yield(arr[i])
+    i += 1
   end
   return return_arr
 end
